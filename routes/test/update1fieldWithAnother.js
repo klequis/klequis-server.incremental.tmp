@@ -7,7 +7,7 @@ import {
   wdDescription,
   wdRuleIds,
   wdTransactions
-} from '../../appWords'
+} from 'appWords'
 
 // eslint-disable-next-line
 import { red, green, yellow, logRequest, _log } from 'logger'

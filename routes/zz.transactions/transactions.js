@@ -6,7 +6,7 @@ import { isNil, mergeRight } from 'ramda'
 
 // eslint-disable-next-line
 import { red, green, logRequest } from 'logger'
-import { wdTransactions } from '../../appWords'
+import { wdTransactions } from 'appWords'
 
 const isEmptyOrUndefined = (val) => {
   if (isNil(val)) {

@@ -6,7 +6,7 @@ import { ObjectID } from 'mongodb'
 
 // eslint-disable-next-line
 import { red, green, yellow, logRequest, _log } from 'logger'
-import { wdTransactions } from '../../appWords'
+import { wdTransactions } from 'appWords'
 
 export const duplicatesCheckNew = wrap(async (req, res) => {
   const match1 = {

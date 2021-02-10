@@ -1,5 +1,5 @@
 import { updateMany } from 'db'
-import { wdTransactions } from '../../appWords'
+import { wdTransactions } from 'appWords'
 
 export const resetTx = async (ruleObjId) => {
   return updateMany({

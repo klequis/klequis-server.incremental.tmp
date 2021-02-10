@@ -153,15 +153,20 @@ export const insertOne = async ({ collection, data }) => {
  *
  * @param {string} collection the name of a collection
  * @param {object} filter filter criteria
- * @param {object} project a valid projection
- * @returns {array}
- *
+ * @param {object} projection a valid projection
+ * @param {object} collation a valid collation
+ * @param {number} sort 1 ascending, -1 descinding
+ * @param {number} limit number > 0. default is 0
+ * @returns {array} an array of matching documents
+ * @description collection is required. All other params are optional
  */
 export const find = async ({
   collection,
   filter = {},
   projection = {},
-  collation = {}
+  collation = {},
+  sort = {},
+  limit = 0
 }) => {
   try {
     const { db } = await connectDB()
@@ -170,6 +175,8 @@ export const find = async ({
       .find(filter)
       .project(projection)
       .collation(collation)
+      .sort(sort)
+      .limit(limit)
       .toArray()
   } catch (e) {
     throw new DatabaseError(e)

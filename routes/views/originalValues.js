@@ -4,7 +4,7 @@ import { sortBy, compose, toLower, prop } from 'ramda'
 
 // eslint-disable-next-line
 import { red, green, logRequest, yellow } from 'logger'
-import { wdTransactions } from '../../appWords'
+import { wdTransactions } from 'appWords'
 
 // const sortByNameCaseInsensitive = sortBy(compose(toLower, prop('name')))
 

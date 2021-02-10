@@ -8,7 +8,7 @@ import * as R from 'ramda'
 
 // eslint-disable-next-line
 import { yellow, redf, blue } from 'logger'
-import { wdTransactions } from '../../appWords'
+import { wdTransactions } from 'appWords'
 
 const replaceTmpId = (obj) => {
   return R.mergeRight(obj, { _id: ObjectID() })

@@ -6,7 +6,7 @@ import { format } from 'date-fns'
 
 // eslint-disable-next-line
 import { yellow, redf } from 'logger'
-import { wdTransactions } from '../../appWords'
+import { wdTransactions } from 'appWords'
 
 const jsonToCsv = (json) => {
   const replacer = (key, value) => (value === null ? '' : value) // specify how you want to handle null values here

@@ -5,7 +5,7 @@ import { convertFieldValuesToUi } from 'db/constants'
 /* eslint-disable */
 import { yellow, red, redf } from 'logger'
 import * as R from 'ramda'
-import { wdTransactions } from '../../appWords'
+import { wdTransactions } from 'appWords'
 
 /* eslint-enable */
 

@@ -4,7 +4,7 @@ import { ObjectID, ObjectId } from 'mongodb'
 
 // eslint-disable-next-line
 import { red, green, yellow, logRequest, _log } from 'logger'
-import { wdTransactions } from '../../appWords'
+import { wdTransactions } from 'appWords'
 
 const update1FieldWithAnother = wrap(async (req, res) => {
   const match1 = {

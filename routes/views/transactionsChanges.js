@@ -10,7 +10,7 @@ import {
   wdId,
   wdRuleIds,
   wdTransactions
-} from '../../appWords'
+} from 'appWords'
 
 // const sortByNameCaseInsensitive = sortBy(compose(toLower, prop('name')))
 

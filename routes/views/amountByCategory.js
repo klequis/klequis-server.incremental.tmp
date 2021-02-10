@@ -3,7 +3,7 @@ import { executeAggregate } from 'db/dbFunctions'
 
 // eslint-disable-next-line
 import { red, green, yellow, logRequest } from 'logger'
-import { wdTransactions } from '../../appWords'
+import { wdTransactions } from 'appWords'
 
 const amountByCategory = wrap(async (req, res) => {
   const match1 = {

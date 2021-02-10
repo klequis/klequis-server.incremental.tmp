@@ -4,7 +4,7 @@ import { convertFieldValuesToUi } from 'db/constants'
 
 // eslint-disable-next-line
 import { redf, yellow } from 'logger'
-import { wdTransactions } from '../../appWords'
+import { wdTransactions } from 'appWords'
 
 const duplicatesGet = wrap(async (req, res) => {
   const data = await find({

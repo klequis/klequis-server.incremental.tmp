@@ -5,7 +5,7 @@ import { filterBuilder } from 'actions/filterBuilder'
 
 // eslint-disable-next-line
 import { red, green, logRequest } from 'logger'
-import { wdTransactions } from '../../appWords'
+import { wdTransactions } from 'appWords'
 
 const dataGetByCriteria = wrap(async (req, res, next) => {
   const { body } = req

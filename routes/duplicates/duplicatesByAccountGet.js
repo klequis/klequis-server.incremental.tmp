@@ -5,7 +5,7 @@ import * as R from 'ramda'
 
 // eslint-disable-next-line
 import { redf, yellow } from 'logger'
-import { wdTransactions } from '../../appWords'
+import { wdTransactions } from 'appWords'
 
 const match1 = {
   $match: {

@@ -15,10 +15,6 @@ export const getAcctIds = async (req, res) => {
 }
 
 export const getAcctIdsRequest = wrap(async (req, res) => {
-  const r = await find({
-    collection: wdAccounts,
-    projection: { _id: 0, acctId: 1 }
-  })
-  const ids = R.map((doc) => doc.acctId, r)
-  res.send(ids)
+  const r = await getAcctIds()
+  res.send(r)
 })

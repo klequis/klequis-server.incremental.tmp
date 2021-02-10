@@ -9,7 +9,7 @@ const path = require('path')
 
 // eslint-disable-next-line
 import { green, red, redf, yellow, greenf } from 'logger'
-import { wdTransactions } from '../../appWords'
+import { wdTransactions } from 'appWords'
 
 /**
  * @description drop the transactions and raw-data collection
